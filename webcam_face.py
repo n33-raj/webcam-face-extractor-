@@ -38,7 +38,7 @@ while True:
         #face = cv2.cvtColor(face, cv2.COLOR_BGR2GRAY)
 
         # Save file in specified directory with unique name
-        file_name_path = './datasets/train/Reeta/' + str(count) + '.jpg'          ### change the path to collect the images in other folders
+        file_name_path = './datasets/train/' + str(count) + '.jpg'          ### change the path to collect the images in other folders
         cv2.imwrite(file_name_path, face)
 
         # Put count on images and display live count
@@ -49,7 +49,7 @@ while True:
         print("Face not found")
         pass
 
-    if cv2.waitKey(1) == 13 or count == 150: #13 is the Enter Key
+    if cv2.waitKey(1) == 13 or count == 100: #13 is the Enter Key
         break
         
 cap.release()
